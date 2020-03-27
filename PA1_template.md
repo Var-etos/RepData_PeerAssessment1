@@ -100,7 +100,7 @@ data.frame(StepsPerDay)
 hist(StepsPerDay,ylim=c(0,40),main="Average steps per day",xlab = "Steps/day")
 ```
 
-![](PA1_template_files/figure-markdown_github/hist%20totalSteps%20per%20day-1.png)
+![](Figs/hist%20totalSteps%20per%20day-1.png)
 
 ### Mean & Median of total steps per day
 
@@ -129,7 +129,7 @@ plot(stepsperinterval$interval,stepsperinterval$steps,type="l",col="red",lwd=1.5
 axis(side=1, at=seq(0,max(stepsperinterval$interval), by=100))
 ```
 
-![](PA1_template_files/figure-markdown_github/steps%20per%20interval%20plot-1.png)
+![](Figs/steps%20per%20interval%20plot-1.png)
 
 ### Interval with max no. of steps
 
@@ -167,7 +167,7 @@ StepsPerDaynew<-tapply(ActivityData$steps,ActivityData$date,sum)
 hist(StepsPerDaynew,ylim=c(0,40),main="Average steps per day with imputed values",xlab="Steps/day")
 ```
 
-![](PA1_template_files/figure-markdown_github/hist%20totalSteps%20per%20day%20with%20imputed%20data-1.png)
+![](Figs/hist%20totalSteps%20per%20day%20with%20imputed%20data-1.png)
 
 ### New mean of steps per day
 
@@ -241,4 +241,4 @@ theme(plot.title=element_text(size=18, hjust=0.5, face="bold", colour="black"))+
 theme(plot.subtitle=element_text(size=14, hjust=0.5, face="italic", color="chocolate"))
 ```
 
-![](PA1_template_files/figure-markdown_github/plot%20Weekdays%20vs%20Weekends-1.png)
+![](Figs/plot%20Weekdays%20vs%20Weekends-1.png)
