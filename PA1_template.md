@@ -224,7 +224,7 @@ ActivityData$interval<-as.numeric(ActivityData$interval)
 
 StepsperWeekDay<-ActivityData%>%
   group_by(interval,Day)%>%
-  summarise(steps=sum(steps))
+  summarise(steps=mean(steps))
 
 library(ggplot2)
 
